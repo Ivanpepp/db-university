@@ -1,3 +1,5 @@
+ESERCIZIO1
+
 Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti 
 un'università:
 - sono presenti diversi dipartimenti, ciascuno con i propri corsi di laurea;
@@ -6,3 +8,14 @@ un'università:
 - ogni studente è iscritto ad un corso di laurea;
 - per ogni appello d'esame a cui lo studente ha partecipato, è necessario memorizzare 
 il voto ottenuto, anche se non sufficiente
+
+ESERCIZIO 2 
+
+1. SELECT * FROM `students` WHERE YEAR(`date_of_birth`) = '1990';
+2. SELECT * FROM `courses` WHERE `cfu` > 10;
+3. SELECT * FROM `students` WHERE `date_of_birth` < '1991-01-01';
+4. SELECT * FROM `courses` WHERE `year` = 1 AND `period` = 'I semestre' ;
+5. SELECT * FROM `exams` WHERE `hour` > '14:00:00' AND `date` = '2020-06-20' ;
+6. SELECT * FROM `degrees` WHERE `level` = 'magistrale' ;
+7. SELECT COUNT(id) FROM `departments` ;
+8. SELECT * FROM `teachers` WHERE `phone` IS NULL ;
