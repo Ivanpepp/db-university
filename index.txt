@@ -94,4 +94,4 @@ JOIN
     JOIN exams ON exam_student.exam_id = exams.id
     JOIN courses ON courses.id = exams.course_id
     GROUP BY students.id, courses.id
-    HAVING `voto_massimo` >= 18
+    
