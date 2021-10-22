@@ -30,8 +30,8 @@ GROUP BY
 1. SELECT YEAR(`enrolment_date`), COUNT(*) 
     FROM `students` 
     GROP BY YEAR(`enrolment_date`); // si potrebbe anche scrivere
-    SELECT YEAR(`enrolment_date`), AS `numero_iscritti`  COUNT(*) FROM `students` 
-    GROP BY `numero_iscritti`;
+    SELECT YEAR(`enrolment_date`) AS `numero_iscritti`  COUNT(*) FROM `students` 
+    GROUP BY `numero_iscritti`;
 
 2. SELECT  COUNT(*) AS `n_insegnanti`, `office_address` 
     FROM `teachers` 
@@ -50,7 +50,7 @@ JOIN
 1. SELECT `students`.*. `degrees`.`name`
     FROM `students`
     JOIN `degrees` ON `degrees`.`id` = `students`.`degrees_id`
-    WHERE `degrees`.`name` = 'corso di laurea in economia';
+    WHERE `degrees`.`id` = 53;
 
 2. SELECT `degrees`.`name` 
     FROM `degrees`
